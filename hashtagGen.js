@@ -1,7 +1,7 @@
 function generateHashtag(str) {
   if (!str) return false;
   const arrOfWords = splitString(str).map((word) =>
-    upperCaseFirstLetter(word.trim())
+    upperCaseFirstLetter(word)
   );
   arrOfWords.unshift("#");
   const hashtag = arrOfWords.join("");
@@ -15,4 +15,4 @@ function splitString(word) {
   return word.split(" ");
 }
 
-console.log(" ".repeat(200));
+
